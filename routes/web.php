@@ -11,6 +11,36 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/formation',function(){
+    return view("vitrine.formation");
 });
+
+Route::get('/news',function(){
+    return view("vitrine.news");
+});
+
+Route::get('/equivalence-generique',function(){
+    return view("vitrine.equivalence-generique");
+});
+
+Route::get('/laboratoire', 'LaboratoireController@index');
+Route::post('/laboratoire/{slug}', 'LaboratoireController@filtre');
+
+/*
+Route::get('/contact',function(){
+    return view("vitrine.contact");
+});
+*/
+
+Route::get('/contact', [
+    'uses' => 'ContactMessageController@create'
+]);
+
+Route::post('/contact', [
+    'uses' => 'ContactMessageController@store',
+    'as' => 'contact.store'
+]);
+
+Route::get('/news', 'HomeController@index');
+
+Route::get('/', 'HomeController@returnView');
