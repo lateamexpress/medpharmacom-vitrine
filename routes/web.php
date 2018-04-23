@@ -23,8 +23,19 @@ Route::get('/equivalence-generique',function(){
     return view("vitrine.equivalence-generique");
 });
 
+Route::post('/equivalence-generique', [
+    'uses' => 'EquivalencegeneriqueController@filtreMedicamentGenerique',
+]);
+Route::post('/equivalence-generique', [
+    'uses' => 'EquivalencegeneriqueController@filtreMedicamentGenerique',
+]);
+
 Route::get('/laboratoire', 'LaboratoireController@index');
-Route::post('/laboratoire/{slug}', 'LaboratoireController@filtre');
+
+Route::post('/laboratoire', [
+    'as' => 'laboratoire.store',
+    'uses' => 'LaboratoireController@filtre'
+]);
 
 /*
 Route::get('/contact',function(){
