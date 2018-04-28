@@ -17,7 +17,9 @@
         <div class="offset-l2 col m12 s12 l7" style="margin-top: 75px; margin-bottom: 50vh;">
             <form method="post" action="{{ route('laboratoire.store') }}">
                 {{ csrf_field() }}
-                <div class="input-field col s12 card-search">
+                <h1 class="center-align">Trouvez un laboratoire</h1>
+                <p>Saisissez le nom d'un laboratoire puis cliquez sur Afficher les résultats. Le résultat qui s'affichera ci-dessous, génèrera des cartouches avec les différentes informations.</p>
+                <div class="input-field col s12 card-search mt50">
                     <i class="material-icons prefix">search</i>
                     <input name="laboratoire" id="laboratoire" name="laboratoire" type="text" class="validate">
                     <label for="laboratoire">Rechercher les laboratoires</label>

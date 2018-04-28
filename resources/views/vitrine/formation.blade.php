@@ -17,6 +17,7 @@
         <div class="col s12 mt50" id="bloc-formation">
             <h1>Etablissements de formation</h1>
             <div class="divider-custom"></div>
+            <p>Vosu trouverez ci-dessous les différents étabilissements de formation</p>
             <iframe src="https://www.google.com/maps/d/embed?mid=ztTTZ-64BfUk.knoVA-yqbM5M" width="640" height="480"></iframe>
         </div>
     </div>
