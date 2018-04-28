@@ -17,7 +17,9 @@
         <div class="offset-l2 col m12 s12 l7" style="margin-top: 75px; margin-bottom: 50vh;">
             <form method="post" action="{{ url('equivalence-generique')}}">
                 {{ csrf_field() }}
-                <div class="input-field col s12 card-search">
+                <h1 class="center-align">Trouvez la correspondance médicament - générique / générique - médicament</h1>
+                <p>Saisissez le nom d'un générique ou d'un médicament puis cliquez sur l'un des deux boutons pour effectuer la recherche. Le résultat qui s'affichera ci-dessous, génèrera des cartouches avec les différentes informations.</p>
+                <div class="input-field col s12 card-search mt50">
                     <i class="material-icons prefix">search</i>
                     <input id="equivalence-generique" name="equivalence-generique" type="text" class="validate">
                     <label for="equivalence-generique">Equivalence générique</label>

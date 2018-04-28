@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         @yield('specific-css')
     </head>
 <body>
@@ -87,6 +88,7 @@
                     Nicolas-Killian Duchassin
                     href="https://www.linkedin.com/in/k%C3%A9vin-dintanavong-539049115/     Kévin Dintanavong
                     -->
+                    <a class="waves-effect waves-light btn btn-network" style="float: right;" href="https://fr.linkedin.com/company/medpharmacom"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>
