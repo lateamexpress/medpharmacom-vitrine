@@ -152,6 +152,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col s12">
+                        <img class="responsive-img" src="{{ asset('img/12.PNG') }}" alt="" title=""/>
+                        <img class="responsive-img"  src="{{ asset('img/14.PNG') }}" alt="" title=""/>
+                    </div>
                 </div>
             </div>
             <div class="row no-mb">
