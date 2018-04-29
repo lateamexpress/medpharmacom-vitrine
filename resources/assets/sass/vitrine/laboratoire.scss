@@ -12,12 +12,24 @@
 }
 
 .card {
-  height: 80%;
-  .card-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  height: 50vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   .card-content {
     height: 170px;
+  }
+}
+@media screen and (max-width: 992px){
+  .card {
+    height: 65vh;
+    .card-content {
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .card {
+    height: auto;
   }
 }

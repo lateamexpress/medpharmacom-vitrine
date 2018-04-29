@@ -250,16 +250,28 @@ h1 {
 }
 
 .card {
-  height: 80%;
-}
-
-.card .card-title {
+  height: 50vh;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .card .card-content {
   height: 170px;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    height: 65vh;
+  }
+  .card .card-content {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=laboratoire.css.map */
