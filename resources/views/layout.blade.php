@@ -36,6 +36,7 @@
                     <li class="li-menu"><a href="{{ url('news') }}">Actualités</a></li>
                     <li class="li-menu"><a href="{{ url('equivalence-generique') }}">Equivalence générique</a></li>
                     <li class="li-menu"><a href="{{ url('laboratoire') }}">Laboratoire</a></li>
+                    <li class="li-menu"><a href="{{ url('goodies') }}">Goodies</a></li>
                     <li class="li-menu"><a href="{{ url('contact') }}">Contact</a></li>
                     <li class="li-menu" id="burger-menu"><a href="#" data-activates="slide-out" class="button-collapse-side right"><i class="material-icons">menu</i></a></li>
                 </ul>
@@ -65,18 +66,23 @@
         <footer class="page-footer grey darken-3">
             <div class="container container-footer">
                 <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text">Footer Content</h5>
-                        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quam mauris, lobortis at dictum vitae, vestibulum a purus. In ac ornare ante.</p>
+                    <div class="col l4 s12">
+                        <h5 class="white-text">A propos de Medpharmacom</h5>
+                        <p class="grey-text text-lighten-4">Ce site est réservé aux CE d'entreprise dans le domaine des professionnels de la santé.</p>
                     </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Coordonnées</h5>
+                    <div class="col l4 s12">
+                        <h5 class="white-text">En savoir plus</h5>
+                        <p class="grey-text text-lighten-4"></p>
                         <ul>
-                            <li> MedPharmacom.fr</li>
-                            <li>53 Rue de Vauban 69006 Lyon</li>
-                            <li>Tel : 01 83 80 46 03 / 06 51 40 43 38</li>
-                            <li>Siret : 812 261 535 Rcs Lyon</li>
+                            <li><a href="medpharmacom.ipmeo.com">Site web Medpharmacom</a></li>
+                            <li><a href="ce-medpharmacom.ipmeo.com">Application CE</a></li>
                         </ul>
+                    </div>
+                    <div class="col l4 s12">
+                        <h5 class="white-text">Nous contacter</h5>
+                        <p class="grey-text text-lighten-4">53 Rue de Vauban 69006 Lyon</p>
+                        <p class="grey-text text-lighten-4">Tel : 01 83 80 46 03 / 06 51 40 43 38 </p>
+                        <p class="grey-text text-lighten-4">Siret : 812 261 535 Rcs Lyon</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +94,7 @@
                     Nicolas-Killian Duchassin
                     href="https://www.linkedin.com/in/k%C3%A9vin-dintanavong-539049115/     Kévin Dintanavong
                     -->
-                    <a class="waves-effect waves-light btn btn-network" style="float: right;" href="https://fr.linkedin.com/company/medpharmacom"><i class="fa fa-linkedin"></i></a>
+                    <a class="waves-effect waves-light btn btn-network" style="position:absolute; right: 37.5%" href="https://fr.linkedin.com/company/medpharmacom"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>

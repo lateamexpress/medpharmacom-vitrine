@@ -21,6 +21,9 @@ elixir((mix) => {
             'vitrine/laboratoire.scss'
         ], 'public/css/vitrine/laboratoire.css')
         .sass([
+            'vitrine/goodies.scss'
+        ], 'public/css/vitrine/goodies.css')
+        .sass([
             'vitrine/equivalence-generique.scss'
         ], 'public/css/vitrine/equivalence-generique.css');
 });

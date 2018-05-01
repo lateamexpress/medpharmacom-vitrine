@@ -30,37 +30,44 @@
                 <p>Le répertoire du pharmacien</p>
                 <div class="row">
                     <div class="col s12 m12 l4 xl4">
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="material-icons">location_on</i>
+                        <a href="{{ url('laboratoire') }}">
+                            <div class="card">
+                                <div class="card-image">
+                                    <i class="material-icons">location_on</i>
+                                </div>
+                                <span class="card-title">Recherchez intelligemment</span>
+                                <div class="card-content">
+                                    <p>Trouver le laboratoire le plus adapté</p>
+                                </div>
                             </div>
-                            <a href="{{ url('laboratoire') }}"><span class="card-title">Recherchez intelligemment</span></a>
-                            <div class="card-content">
-                                <p>Trouver le laboratoire le plus adapté</p>
-                            </div>
-                        </div>
+                            <div class="slideUp"></div>
+                        </a>
                     </div>
                     <div class="col s12 m12 l4 xl4">
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="material-icons">search</i>
+                        <a href="{{ url('equivalence-generique') }}">
+                            <div class="card">
+                                <div class="card-image">
+                                    <i class="material-icons">search</i>
+                                </div>
+                                <span class="card-title">Trouvez vos médicaments</span>
+                                <div class="card-content">
+                                    <p>Notre fonction de recherche analyse votre requête de façon optimisée.</p>
+                                </div>
                             </div>
-                            <a href="{{ url('equivalence-generique') }}"><span class="card-title">Trouvez vos médicaments</span></a>
-                            <div class="card-content">
-                                <p>Notre fonction de recherche analyse votre requête de façon optimisée.</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col s12 m12 l4 xl4">
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="material-icons">add</i>
+                        <a href="{{ url('news') }}">
+                            <div class="card">
+                                <div class="card-image">
+                                    <i class="material-icons">add</i>
+                                </div>
+                                <span class="card-title">Un espace intuitif</span>
+                                <div class="card-content">
+                                    <p>Notre site a été réalisé pour vous offrir la meilleure expérience utilisateur pour rendre votre navigation la plus simple possible.</p>
+                                </div>
                             </div>
-                            <a href="{{ url('news') }}"><span class="card-title">Un espace intuitif</span></a>
-                            <div class="card-content">
-                                <p>Notre site a été réalisé pour vous offrir la meilleure expérience utilisateur pour rendre votre navigation la plus simple possible.</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,7 +169,11 @@
                 <div class="parallax-container">
                     <div class="parallax">
                         <img src="http://www.atrix-recrutement-medical.com/images/atrix-international-medical-slide04.jpg">
-                        <div class="centered">Une large gamme de produits vous y attend !</div>
+                        <div class="centered">
+                            <span>Une question ? Besoin de renseignements ?</span>
+                            <br>
+                            <a class="btn btn-wave" href="{{ url('contact') }}">Cliquez-ici</a>
+                        </div>
                     </div>
                 </div>
             </div>

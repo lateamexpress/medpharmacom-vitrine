@@ -19,6 +19,10 @@ Route::get('/news',function(){
     return view("vitrine.news");
 });
 
+Route::get('/goodies',function(){
+    return view("vitrine.goodies");
+});
+
 Route::get('/equivalence-generique',function(){
     return view("vitrine.equivalence-generique");
 });
