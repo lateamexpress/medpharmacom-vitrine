@@ -49,7 +49,7 @@
                     <div class="background">
                         <img src="https://www.sciencedaily.com/images/2016/05/160504085309_1_900x600.jpg">
                     </div>
-                    <img class="circle" alt="avatar-login" title="avatar-login" src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/8c/8cd2d593555cf702a6cf8231bc105d1897987ebf_medium.jpg">
+                    <img class="circle" alt="avatar-login" title="avatar-login" src="https://cdn2.iconfinder.com/data/icons/professions/512/doctor_assistant-512.png">
                     <span style="color: rgba(0,0,0,0.87); font-weight: bold;">Liens de navigation</span>
                 </div>
             </li>
