@@ -1,2 +1,15 @@
 @import "_general.scss";
 @import "_menu.scss";
+
+.goodies-img {
+  border-radius: 4px;
+  width: 500px !important;
+  height: 500px !important;
+}
+.name-goodies {
+  font: {
+    size: 18px;
+    weight: 600;
+    family: "Lucida Console", Monaco, monospace
+  }
+}

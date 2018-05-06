@@ -19,11 +19,11 @@ class HomeController extends Controller
         $cpt = 0;
 
         $datas = array();
-
+        echo "<div class='container' style='margin-top: 180px'><div class='row'>";
         foreach($rss as $tab){
             $date =  date("d/m/y",strtotime($tab[3]));
-            echo '<div class="container" style="margin-top: 100px; text-align: center;">';
-            echo '<div class="col s12 m3">';
+            echo '<div class="col l6 center-align block-news">';
+            echo '<div>';
             if(substr($tab[2],4,3) == 'img'){
                 if(($cpt % 4) == 0)
                     explode('&gt;',$tab[2]);
@@ -37,7 +37,7 @@ class HomeController extends Controller
                 $tab[0] = $this->raccourcirChaine($tab[0], 65);
                 echo '<div class="icon-block">';
                 echo '<a href="'.$tab[1].'" target="_blank"><img class="responsive-img" src="'.$urlImage[3].'"/></a>';
-                echo '<p class="center" style="font-style:italic; line-height: 1rem;">Posté le '.$date.'</p>';
+                echo '<p>Posté le '.$date.'</p>';
                 echo '<a href="'.$tab[1].'" title="Lien vers l\'article" rel="bookmark" target="_blank" class="bleu"><h5 class="center">'.$tab[0].'</h5></a>';
                 echo '<p class="light">'.$article.'</p>';
                 echo'</div>';
@@ -60,8 +60,8 @@ class HomeController extends Controller
                 $article = $this->raccourcirChaine($article, 100);
                 $tab[0] = $this->raccourcirChaine($tab[0], 65);
                 echo '<div class="icon-block">';
-                echo '<a href="'.$tab[1].'" target="_blank"><img class="responsive-img" src="images/le_quotidien_du_pharmacien2.bmp"/></a>';
-                echo '<p class="center" style="font-style:italic; line-height: 1rem;">Posté le '.$date.'</p>';
+                echo '<a href="'.$tab[1].'" target="_blank"><img width="350" height="235" src="https://newprojects.99acres.com/projects/ivr_prime/ivr_prime_ivory/images/no_photo_available.gif"/></a>';
+                echo '<p>Posté le '.$date.'</p>';
                 echo '<a href="'.$tab[1].'" title="Lien vers l\'article" rel="bookmark" target="_blank" class="bleu"><h5 class="center">'.$tab[0].'</h5></a>';
                 echo '<p class="light">'.$article.'</p>';
                 echo'</div>';
@@ -77,6 +77,8 @@ class HomeController extends Controller
             echo '</div></div>';
         }
         echo '</div>';
+
+        echo '</div></div>';
 
         return view('vitrine/news')->with('datas', $datas);
     }

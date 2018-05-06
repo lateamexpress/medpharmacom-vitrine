@@ -14,7 +14,7 @@
 
 @section('contenu-container')
     <div class="row">
-        <div class="offset-l2 col m12 s12 l7" style="margin-top: 75px; margin-bottom: 50vh;">
+        <div class="offset-l2 col m12 s12 l7 mt120" style="margin-bottom: 50vh;">
             <form method="post" action="{{ route('laboratoire.store') }}">
                 {{ csrf_field() }}
                 <h1 class="center-align">Trouvez un laboratoire</h1>

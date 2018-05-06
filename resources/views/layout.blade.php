@@ -29,8 +29,8 @@
                 <a href="{{ url('/') }}">
                     <img src="{{ asset('img/logo-new.jpg') }}" alt="medpharmacom-logo" title="medpharmacom-logo" id="logo-medpharmacom-menu"/>
                 </a>
+                <a id="logo-home-pc" href="{{ url('/') }}"><img src="{{ asset('img/logo-new.jpg') }}" alt="medpharmacom-logo" title="medpharmacom-logo" id="logo-medpharmacom-menu-pc"/></a>
                 <ul id="nav-mobile" class="left">
-                    <li style="width:20%;"><a id="logo-home-pc" href="{{ url('/') }}"><img src="{{ asset('img/logo-new.jpg') }}" alt="medpharmacom-logo" title="medpharmacom-logo" id="logo-medpharmacom-menu-pc"/></a></li>
                     <li class="li-menu"><a href="{{ url('/') }}">Accueil</a></li>
                     <li class="li-menu"><a href="{{ url('formation') }}">Formation</a></li>
                     <li class="li-menu"><a href="{{ url('news') }}">Actualités</a></li>
@@ -49,8 +49,7 @@
                     <div class="background">
                         <img src="https://www.sciencedaily.com/images/2016/05/160504085309_1_900x600.jpg">
                     </div>
-                    <img class="circle" alt="avatar-login" title="avatar-login" src="https://cdn2.iconfinder.com/data/icons/professions/512/doctor_assistant-512.png">
-                    <span style="color: rgba(0,0,0,0.87); font-weight: bold;">Liens de navigation</span>
+                    <span>Liens de navigation</span>
                 </div>
             </li>
             <li><a href="{{ url('/') }}">Accueil</a></li>
@@ -58,6 +57,7 @@
             <li><a href="{{ url('news') }}">Actualités</a></li>
             <li><a href="{{ url('equivalence-generique') }}">Equivalence générique</a></li>
             <li><a href="{{ url('laboratoire') }}">Laboratoire</a></li>
+            <li><a href="{{ url('goodies') }}">Goodies</a></li>
             <li><a href="{{ url('contact') }}">Contact</a></li>
         </ul>
         <!-- END SIDE NAV -->
@@ -68,7 +68,7 @@
                 <div class="row">
                     <div class="col l4 s12">
                         <h5 class="white-text">A propos de Medpharmacom</h5>
-                        <p class="grey-text text-lighten-4">Ce site est réservé aux CE d'entreprise dans le domaine des professionnels de la santé.</p>
+                        <p class="grey-text text-lighten-4">Destinés aux professionnels de santé, Medpharmacom permet de trouver facilement toutes les équivalences génériques des médicaments.</p>
                     </div>
                     <div class="col l4 s12">
                         <h5 class="white-text">En savoir plus</h5>
@@ -88,13 +88,17 @@
             </div>
             <div class="footer-copyright grey darken-4">
                 <div class="container">
-                    © 2018 Medpharmacom.fr
+                    <div class="row">
+                        <div class="col l4 s6">
+                            © 2018 Medpharmacom.fr
+                        </div>
+                        <div class="col l4 s6 offset-l4"><a class="waves-effect waves-light btn btn-network" href="https://fr.linkedin.com/company/medpharmacom"><i class="fa fa-linkedin"></i></a></div>
+                    </div>
                     <!-- Authors :
                     Moché Matagrin
                     Nicolas-Killian Duchassin
                     href="https://www.linkedin.com/in/k%C3%A9vin-dintanavong-539049115/     Kévin Dintanavong
                     -->
-                    <a class="waves-effect waves-light btn btn-network" style="position:absolute; right: 37.5%" href="https://fr.linkedin.com/company/medpharmacom"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </footer>

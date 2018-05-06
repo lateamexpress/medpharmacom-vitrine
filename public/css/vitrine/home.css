@@ -38,6 +38,34 @@
   margin-top: 50px;
 }
 
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt70 {
+  margin-top: 70px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.mt90 {
+  margin-top: 90px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.mt110 {
+  margin-top: 110px;
+}
+
+.mt120 {
+  margin-top: 120px;
+}
+
 .mb10 {
   margin-bottom: 10px;
 }
@@ -121,21 +149,38 @@ h1 {
   top: 0;
   z-index: 2;
   box-shadow: 0 3px 2px -2px #A5A5A5;
-  height: 70px;
+  height: 130px;
 }
 
 #nav-mobile {
   position: fixed;
   left: 50%;
-  transform: translate(-40%, 0);
-  width: 70%;
+  transform: translate(-50%, 0);
+}
+
+#logo-medpharmacom-menu-pc {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+#burger-menu {
+  display: none;
 }
 
 .button-collapse-side {
   display: none;
 }
 
+.li-menu {
+  float: left;
+}
+
 .li-menu a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
   color: #26A69A;
 }
 
@@ -168,27 +213,21 @@ h1 {
   background: transparent;
 }
 
+@media screen and (max-width: 1610px) {
+  #nav-mobile {
+    width: 800px;
+  }
+}
+
 @media screen and (max-width: 1420px) {
   #nav-mobile {
-    width: 85%;
+    width: 700px;
+    margin: 0 auto;
+    list-style: none;
   }
   .li-menu a {
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  #nav-mobile {
-    left: 0;
-    transform: none;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 788px) {
-  #nav-mobile {
-    width: 100%;
   }
 }
 
@@ -200,16 +239,17 @@ h1 {
 }
 
 @media screen and (max-width: 664px) {
+  #menu:not(.button-collapse-side) {
+    height: 64px;
+  }
   #logo-medpharmacom-menu-pc {
     display: none;
   }
   #burger-menu {
+    display: block;
     position: absolute;
-    right: 80px;
+    right: 15%;
   }
-}
-
-@media screen and (max-width: 660px) {
   #logo-medpharmacom-menu {
     display: block;
     width: 150px;
@@ -225,16 +265,21 @@ h1 {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 560px) {
   #burger-menu {
-    right: 40px;
-    top: -10px;
+    right: 25%;
   }
 }
 
-@media screen and (max-width: 380px) {
-  .button-collapse-side {
-    top: -50px;
+@media screen and (max-width: 390px) {
+  #burger-menu {
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #burger-menu {
+    right: 35%;
   }
 }
 
@@ -283,10 +328,10 @@ h1 {
 }
 
 .head-home .card:hover {
-  background-position: 0 -100%;
+  background-position: top -100px left 10px;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, white 50%, black 50%);
-  transition: background-position 1s;
+  background-image: linear-gradient(to bottom, white 50%, #26A69A 50%);
+  transition: background-position 0.5s;
   color: #7BDFD4;
 }
 

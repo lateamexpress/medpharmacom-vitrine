@@ -40,10 +40,10 @@
       font-size: 18px;
     }
     &:hover {
-      background-position: 0 -100%;
+      background-position: top -100px left 10px;
       background-size: 100% 200%;
-      background-image: linear-gradient(to bottom, white 50%, black 50%);
-      transition: background-position 1s;
+      background-image: linear-gradient(to bottom, white 50%, $turquoise 50%);
+      transition: background-position 0.5s;
       color: #7BDFD4;
     }
   }
