@@ -82,6 +82,7 @@
                         <h5 class="white-text">Nous contacter</h5>
                         <p class="grey-text text-lighten-4">53 Rue de Vauban 69006 Lyon</p>
                         <p class="grey-text text-lighten-4">Tel : 01 83 80 46 03 / 06 51 40 43 38 </p>
+                        <p class="grey-text text-lighten-4">SAS au capital de 260 000 € </p>
                         <p class="grey-text text-lighten-4">Siret : 812 261 535 Rcs Lyon</p>
                     </div>
                 </div>

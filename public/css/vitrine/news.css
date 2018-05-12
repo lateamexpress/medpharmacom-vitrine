@@ -283,8 +283,34 @@ h1 {
   }
 }
 
+.container {
+  margin-top: 180px;
+}
+
 .block-news {
-  height: 420px;
+  height: 500px;
+  border-style: solid;
+  border-color: #e2e3e5;
+  border-width: 1px;
+  border-radius: 4px;
+  margin-bottom: 22.5px;
+  padding: 22.5px;
+}
+
+.news-img {
+  z-index: -20;
+}
+
+@media screen and (max-width: 664px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .block-news {
+    width: 320px;
+  }
 }
 
 /*# sourceMappingURL=news.css.map */

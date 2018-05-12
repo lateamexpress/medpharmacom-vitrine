@@ -19,11 +19,11 @@ class HomeController extends Controller
         $cpt = 0;
 
         $datas = array();
-        echo "<div class='container' style='margin-top: 180px'><div class='row'>";
+        echo "<div class='container'><div class='row'>";
         foreach($rss as $tab){
             $date =  date("d/m/y",strtotime($tab[3]));
-            echo '<div class="col l6 center-align block-news">';
-            echo '<div>';
+            echo '<div class="col l6 center-align">';
+            echo '<div class="block-news">';
             if(substr($tab[2],4,3) == 'img'){
                 if(($cpt % 4) == 0)
                     explode('&gt;',$tab[2]);
@@ -36,10 +36,11 @@ class HomeController extends Controller
                 $article = $this->raccourcirChaine($article, 100);
                 $tab[0] = $this->raccourcirChaine($tab[0], 65);
                 echo '<div class="icon-block">';
-                echo '<a href="'.$tab[1].'" target="_blank"><img class="responsive-img" src="'.$urlImage[3].'"/></a>';
+                echo '<a href="'.$tab[1].'" target="_blank"><img class="responsive-img news-img" src="'.$urlImage[3].'"/></a>';
                 echo '<p>Posté le '.$date.'</p>';
                 echo '<a href="'.$tab[1].'" title="Lien vers l\'article" rel="bookmark" target="_blank" class="bleu"><h5 class="center">'.$tab[0].'</h5></a>';
                 echo '<p class="light">'.$article.'</p>';
+                echo '<a href="'.$tab[1].'" title="Lien vers l\'article" rel="bookmark" target="_blank" class="bleu">Lire la suite</a>';
                 echo'</div>';
                 $cpt++;
 

@@ -1,6 +1,30 @@
 @import "_general.scss";
 @import "_menu.scss";
 
+.container {
+  margin-top: 180px;
+}
 .block-news {
-  height: 420px;
+  height: 500px;
+  border: {
+    style: solid;
+    color: #e2e3e5;
+    width: 1px;
+    radius: 4px;
+  }
+  margin-bottom: 22.5px;
+  padding: 22.5px;
+}
+.news-img {
+  z-index: -20;
+}
+@media screen and (max-width: 664px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .block-news {
+    width: 320px;
+  }
 }
