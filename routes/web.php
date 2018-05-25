@@ -19,9 +19,15 @@ Route::get('/news',function(){
     return view("vitrine.news");
 });
 
-Route::get('/goodies',function(){
-    return view("vitrine.goodies");
-});
+Route::get('/goodies',[
+    //return view("vitrine.goodies");
+    'uses' => 'GoodiesController@create'
+]);
+
+Route::post('/goodies', [
+    'uses' => 'GoodiesController@store',
+    'as' => 'goodies.store'
+]);
 
 Route::get('/equivalence-generique',function(){
     return view("vitrine.equivalence-generique");

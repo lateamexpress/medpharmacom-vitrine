@@ -13,3 +13,13 @@
     family: "Lucida Console", Monaco, monospace
   }
 }
+#contact-form {
+  border: {
+    width: 1px;
+    style: solid;
+    color: #e2e3e5;
+    radius: 4px;
+  }
+  padding: 2%;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
