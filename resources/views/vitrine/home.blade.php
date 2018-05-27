@@ -166,14 +166,11 @@
                 </div>
             </div>
             <div class="row no-mb">
-                <div class="parallax-container">
-                    <div class="parallax">
-                        <img src="http://www.atrix-recrutement-medical.com/images/atrix-international-medical-slide04.jpg">
-                        <div class="centered">
-                            <span>Une question ? Besoin de renseignements ?</span>
-                            <br>
-                            <a class="btn btn-wave" href="{{ url('contact') }}">Cliquez-ici</a>
-                        </div>
+                <div class="col l12" id="parallaxHome">
+                    <div class="centered">
+                        <span>Une question ? Besoin de renseignements ?</span>
+                        <br>
+                        <a class="btn btn-wave" href="{{ url('contact') }}">Cliquez-ici</a>
                     </div>
                 </div>
             </div>
