@@ -284,15 +284,13 @@ h1 {
 }
 
 .goodies-img {
-  border-radius: 4px;
-  width: 500px !important;
-  height: 500px !important;
+  max-height: 300px;
 }
 
 .name-goodies {
   font-size: 18px;
   font-weight: 600;
-  font-family: "Lucida Console", Monaco, monospace;
+  text-decoration: underline;
 }
 
 #contact-form {

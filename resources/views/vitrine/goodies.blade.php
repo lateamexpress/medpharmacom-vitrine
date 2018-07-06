@@ -29,7 +29,7 @@
                         <br>
                         <span class="name-goodies">Notebook Medpharmacom</span>
                     </div>
-                    <div class="col l6 s12 mt50">
+                    <div class="col l6 mt50 s12">
                         <img class="responsive-img goodies-img" src="{{ asset('img/test3.png') }}">
                         <br>
                         <span class="name-goodies">Stylo Medpharmacom</span>

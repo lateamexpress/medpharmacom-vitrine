@@ -2,16 +2,14 @@
 @import "_menu.scss";
 
 .goodies-img {
-  border-radius: 4px;
-  width: 500px !important;
-  height: 500px !important;
+  max-height: 300px;
 }
 .name-goodies {
   font: {
     size: 18px;
     weight: 600;
-    family: "Lucida Console", Monaco, monospace
   }
+  text-decoration: underline;
 }
 #contact-form {
   border: {
