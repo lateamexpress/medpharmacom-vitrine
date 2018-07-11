@@ -34,7 +34,7 @@
                             <div class="card">
                                 <div class="card-image">
                                     @isset($labo['ref_id_image'])
-                                        <img src="{{ url('img/' . $labo->ref_id_image )}}">
+                                        <img src="{{ asset('img/' . $labo->ref_id_image )}}">
                                     <!--<img src="http://saint-andre-d-olerargues.com/wpdossier/wp-content/uploads/2015/03/paracetamole.jpg"/>-->
                                         <span class="card-title">{{ $labo['nom'] }}</span>
                                     @else
