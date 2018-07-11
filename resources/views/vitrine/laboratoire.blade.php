@@ -34,10 +34,10 @@
                             <div class="card">
                                 <div class="card-image">
                                     @isset($labo['ref_id_image'])
-                                        <!-- <img src="{{ $labo['ref_id_image'] }}"> -->
-                                        <img src="http://saint-andre-d-olerargues.com/wpdossier/wp-content/uploads/2015/03/paracetamole.jpg"/>
+                                        <img src="{{ asset('img/' . $labo->ref_id_image )}}">
+                                    <!--<img src="http://saint-andre-d-olerargues.com/wpdossier/wp-content/uploads/2015/03/paracetamole.jpg"/>-->
                                         <span class="card-title">{{ $labo['nom'] }}</span>
-                                        @else
+                                    @else
                                         <img src="http://materializecss.com/images/sample-1.jpg">
                                         <span class="card-title">{{ $labo['nom'] }}</span>
                                     @endisset

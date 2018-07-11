@@ -24,11 +24,7 @@ class Laboratoire extends Eloquent
     protected $table = 'laboratoire';
     protected $primaryKey = 'id_laboratoire';
     public $timestamps = false;
-
-    protected $casts = [
-        'ref_id_image' => 'int',
-    ];
-
+    
     protected $fillable = [
         'nom',
         'ref_id_image',
