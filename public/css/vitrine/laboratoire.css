@@ -301,7 +301,9 @@ h1 {
 }
 
 .card .card-content {
-  height: 170px;
+  height: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 992px) {

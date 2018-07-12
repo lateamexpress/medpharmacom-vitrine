@@ -70,7 +70,7 @@
                                     <label for="message">Votre message *</label>
                                 </div>
                             </div>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
                                 <i class="material-icons right">send</i>
                             </button>
                         </form>

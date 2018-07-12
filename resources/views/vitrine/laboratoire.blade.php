@@ -34,16 +34,14 @@
                             <div class="card">
                                 <div class="card-image">
                                     @isset($labo['ref_id_image'])
-                                        <img src="{{ asset('img/' . $labo->ref_id_image )}}">
-                                    <!--<img src="http://saint-andre-d-olerargues.com/wpdossier/wp-content/uploads/2015/03/paracetamole.jpg"/>-->
-                                        <span class="card-title">{{ $labo['nom'] }}</span>
+                                        <img class="responsive-img" src="{{ asset('img/' . $labo->ref_id_image )}}">
                                     @else
-                                        <img src="http://materializecss.com/images/sample-1.jpg">
-                                        <span class="card-title">{{ $labo['nom'] }}</span>
+                                        <img class="responsive-img" src="http://materializecss.com/images/sample-1.jpg">
                                     @endisset
                                 </div>
                                 <div class="card-content">
                                     <ul>
+                                        <li>{{ $labo['nom'] }}</li>
                                         <li>Tél : {{ $labo['tel'] }}</li>
                                         <li>FAX : {{ $labo['fax'] }}</li>
                                         <li>Adresse : {{ $labo['adresse'] }}</li>
