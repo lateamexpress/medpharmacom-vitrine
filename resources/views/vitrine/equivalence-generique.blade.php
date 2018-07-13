@@ -35,9 +35,9 @@
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="http://saint-andre-d-olerargues.com/wpdossier/wp-content/uploads/2015/03/paracetamole.jpg">
-                                        <span class="card-title">{{ $med['actif'] }}</span>
                                     </div>
                                     <div class="card-content">
+                                        <p><strong>{{ $med['actif'] }}</strong></p>
                                         <p>{{ $med['title'] }}</p>
                                         <p>{{ $med['classe'] }}</p>
                                     </div>

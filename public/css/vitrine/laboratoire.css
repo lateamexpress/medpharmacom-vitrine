@@ -294,24 +294,27 @@ h1 {
   right: 10px;
 }
 
+.img-lab-medic {
+  height: 100px;
+}
+
 .card {
-  height: 50vh;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .card .card-content {
-  height: 180px;
+  height: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 992px) {
   .card {
-    height: 65vh;
+    height: 450px;
   }
   .card .card-content {
-    height: auto;
+    height: 300px;
   }
 }
 

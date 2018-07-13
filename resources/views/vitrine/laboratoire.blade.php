@@ -34,9 +34,9 @@
                             <div class="card">
                                 <div class="card-image">
                                     @isset($labo['ref_id_image'])
-                                        <img class="responsive-img" src="{{ asset('img/' . $labo->ref_id_image )}}">
+                                        <img class="img-lab-medic" src="{{ asset('img/' . $labo->ref_id_image )}}">
                                     @else
-                                        <img class="responsive-img" src="http://materializecss.com/images/sample-1.jpg">
+                                        <img class="img-lab-medic" src="http://materializecss.com/images/sample-1.jpg">
                                     @endisset
                                 </div>
                                 <div class="card-content">
