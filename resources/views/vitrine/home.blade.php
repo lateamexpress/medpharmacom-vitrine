@@ -13,7 +13,7 @@
 @section('contenu')
     <div class="carousel carousel-slider center" id="slider-home">
         <div class="carousel-item white-text">
-           <img class="responsive-img" src="http://www.otayrx.com/wp-content/themes/otaylakespharmacy/images/slides/2.jpg" alt="slide1" title="slide1">
+           <img class="responsive-img" src="http://www.livineyetours.com/medias/page/big/55/medical-tour.jpg" alt="slide1" title="slide1">
         </div>
         <div class="carousel-item white-text">
             <img class="responsive-img" src="https://0201.nccdn.net/1_2/000/000/094/9a0/slider1_rev1.jpg" alt="slide3" title="slide3">
